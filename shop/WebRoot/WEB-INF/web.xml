@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	<!-- 登陆 -->
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.niu.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet.action</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>SearchMajorServlet</servlet-name>
+		<servlet-class>com.niu.servlet.SearchMajorServlet</servlet-class>
+	</servlet>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SearchNumServlet</servlet-name>
+    <servlet-class>com.niu.servlet.SearchNumServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.niu.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ImageUpServlet</servlet-name>
+    <servlet-class>com.niu.servlet.ImageUpServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UploadServlet</servlet-name>
+    <servlet-class>com.niu.servlet.UploadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>insertGoodsServlet</servlet-name>
+    <servlet-class>com.niu.servlet.insertGoodsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>searchGoodsByTypeServlet</servlet-name>
+    <servlet-class>com.niu.servlet.searchGoodsByTypeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>searchUserByIdServlet</servlet-name>
+    <servlet-class>com.niu.servlet.searchUserByIdServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>insertOrderInfoServlet</servlet-name>
+    <servlet-class>com.niu.servlet.insertOrderInfoServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>SearchMajorServlet</servlet-name>
+		<url-pattern>/SearchMajorServlet</url-pattern>
+	</servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>SearchNumServlet</servlet-name>
+    <url-pattern>/SearchNumServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ImageUpServlet</servlet-name>
+    <url-pattern>/ImageUpServlet</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>UploadServlet</servlet-name>
+    <url-pattern>/UploadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>insertGoodsServlet</servlet-name>
+    <url-pattern>/insertGoodsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>searchGoodsByTypeServlet</servlet-name>
+    <url-pattern>/searchGoodsByTypeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>searchUserByIdServlet</servlet-name>
+    <url-pattern>/searchUserByIdServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>insertOrderInfoServlet</servlet-name>
+    <url-pattern>/insertOrderInfoServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/insert_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/username" />
+
+            <EditText
+                android:id="@+id/insert_et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_x"
+                android:hint="请输入姓名" />
+
+            <TextView
+                android:id="@+id/insert_tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/userage" />
+
+            <EditText
+                android:id="@+id/insert_et_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_x"
+                android:hint="请输入年龄" />
+
+            <TextView
+                android:id="@+id/insert_tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/userphone" />
+
+            <EditText
+                android:id="@+id/insert_et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_x"
+                android:hint="请输入手机号" />
+
+            <TextView
+                android:id="@+id/insert_tv_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/userqq" />
+
+            <EditText
+                android:id="@+id/insert_et_qq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_x"
+                android:hint="请输入qq号" />
+            
+            <TextView
+                android:id="@+id/insert_tv_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/userpwd" />
+
+            <EditText
+                android:id="@+id/insert_et_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_x"
+                android:hint="请输入密码" />
+            
+            <TextView
+                android:id="@+id/insert_tv_pwd_again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/userpwd_again" />
+
+            <EditText
+                android:id="@+id/insert_et_pwd_again"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_x"
+                android:hint="请再次输入密码" />
+
+ 			<TextView
+                android:id="@+id/insert_tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/usernum" />
+
+            <EditText
+                android:id="@+id/insert_et_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_x"
+                android:hint="请输入学号" />
+
+            
+			
+            <RadioGroup
+                android:id="@+id/insert_rg_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/insert_rb_man"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="男" />
+
+                <RadioButton
+                    android:id="@+id/insert_rb_woman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="女" />
+
+            </RadioGroup>
+			<LinearLayout 
+			    android:layout_width="match_parent"
+   		 		android:layout_height="match_parent"
+    			android:orientation="horizontal" >
+	            <Spinner
+	                android:id="@+id/insert_sp_collage"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:spinnerMode="dialog" />
+                <Spinner
+	                android:id="@+id/insert_sp_major"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:spinnerMode="dialog" />
+                <Spinner
+	                android:id="@+id/insert_sp_num"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:spinnerMode="dialog" />
+			    </LinearLayout>
+			
+            <Button
+                android:id="@+id/insert_btn_insert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="注册" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

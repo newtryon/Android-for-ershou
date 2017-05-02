@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="河 北 地 址 大 學"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:id="@+id/log_rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp" >
+
+        <ImageView
+            android:id="@+id/log_iv_head"
+            android:layout_width="106dp"
+            android:layout_height="108dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo1" />
+
+        <LinearLayout
+            android:id="@+id/log_ll_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/log_iv_head"
+            android:layout_marginTop="17dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/log_et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="请输入用户名（学号）"
+                    android:inputType="text" />
+
+                <ImageView
+                    android:id="@+id/log_iv_nameclr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:src="@drawable/clear_1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/log_et_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword" />
+
+                <ImageView
+                    android:id="@+id/log_iv_pwdclr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:src="@drawable/clear_1" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/log_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="记住密码" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/log_btn_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px"
+                    android:layout_weight="1"
+                    android:background="#6699ff"
+                    android:text="登录"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/log_btn_regit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px"
+                    android:layout_weight="1"
+                    android:background="#6699ff"
+                    android:onClick="regist"
+                    android:text="注册"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/log_btn_scan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px"
+                    android:layout_weight="1"
+                    android:background="#00cc00"
+                    android:onClick="scan"
+                    android:text="随 便 看 看"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/log_tv_findback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="找回密码" />
+    </RelativeLayout>
+
+</LinearLayout>

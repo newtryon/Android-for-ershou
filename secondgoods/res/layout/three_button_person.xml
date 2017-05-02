@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/login" >
+    <Button 
+        android:id="@+id/tbp_btn_sellgoods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我 发 布 的"
+        android:layout_marginTop="5dp"
+        />
+    <Button 
+        android:id="@+id/tbp_btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="修 改 资 料"
+        android:layout_marginTop="5dp"
+        />
+    <Button 
+        android:id="@+id/tbp_btn_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  退       出  "
+        android:layout_marginTop="5dp"
+        />
+
+</LinearLayout>
